@@ -1,29 +1,29 @@
 import styled from 'styled-components';
 
-const nav = styled.nav`
+export const Nav = styled.nav`
   background-color: #000;
   margin: 0;
   overflow: hidden;
   color: #fff;
 `;
 
-const navList = styled.ul`
+export const NavList = styled.ul`
   margin: 0;
   padding: 0;
 `;
 
-const navItem = styled.li`
+export const NavItem = styled.li`
   display: inline-block;
   list-style-type: none;
 `;
 
-const clickableNavItem = styled(navItem)`
+export const ClickableNavItem = styled(NavItem)`
   &:hover {
     background-color: green;
   }
 `;
 
-const navLink = styled.a`
+export const NavLink = styled.a`
   color: #fff;
   display: block;
   line-height: 2em;
@@ -31,18 +31,9 @@ const navLink = styled.a`
   text-decoration: none;
 `;
 
-const searchBox = styled.input.attrs({
+export const SearchBox = styled.input.attrs({
   type: 'text',
   placeholder: 'Search...',
 })`
   color: black;
 `;
-
-export default {
-  nav,
-  navList,
-  navItem,
-  clickableNavItem,
-  navLink,
-  searchBox,
-};

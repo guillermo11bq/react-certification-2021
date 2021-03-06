@@ -1,25 +1,25 @@
 import React from 'react';
-import styled from './Styled';
+import { Nav, NavList, NavItem, ClickableNavItem, NavLink, SearchBox } from './Styled';
 
 function Navbar() {
   return (
-    <styled.nav>
-      <styled.navList>
-        <styled.clickableNavItem>
-          <styled.navLink>Home</styled.navLink>
-        </styled.clickableNavItem>
-        <styled.navItem>
-          <styled.searchBox />
-        </styled.navItem>
-        <styled.navItem>
+    <Nav>
+      <NavList>
+        <ClickableNavItem>
+          <NavLink>Home</NavLink>
+        </ClickableNavItem>
+        <NavItem>
+          <SearchBox />
+        </NavItem>
+        <NavItem>
           <input type="checkbox"></input>
           Dark Mode
-        </styled.navItem>
-        <styled.clickableNavItem>
-          <styled.navLink>Iniciar sesión</styled.navLink>
-        </styled.clickableNavItem>
-      </styled.navList>
-    </styled.nav>
+        </NavItem>
+        <ClickableNavItem>
+          <NavLink>Iniciar sesión</NavLink>
+        </ClickableNavItem>
+      </NavList>
+    </Nav>
   );
 }
 
